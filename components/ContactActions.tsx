@@ -10,12 +10,12 @@ const config: Record<
   call: {
     label: "Call now",
     icon: Phone,
-    classes: "bg-accent text-accent-ink hover:bg-accent-hover",
+    classes: "bg-[#d45c3c] text-white hover:bg-[#b84b2f]",
   },
   whatsapp: {
     label: "WhatsApp",
     icon: MessageCircle,
-    classes: "bg-secondary text-white hover:opacity-90",
+    classes: "bg-[#25D366] text-white hover:bg-[#1DA851]",
   },
   booking: {
     label: "Book a session",
@@ -45,7 +45,7 @@ export default function ContactActions({
             target={c.type === "call" ? undefined : "_blank"}
             rel={c.type === "call" ? undefined : "noopener noreferrer"}
             onClick={(e) => e.stopPropagation()}
-            className={`inline-flex items-center gap-1.5 rounded-full font-semibold transition-all hover:scale-[1.03] active:scale-[0.98] ${cfg.classes} ${
+            className={`inline-flex items-center gap-1.5 rounded-lg font-medium transition-colors ${cfg.classes} ${
               size === "sm" ? "px-3 py-1.5 text-xs" : "px-4 py-2.5 text-sm"
             }`}
           >

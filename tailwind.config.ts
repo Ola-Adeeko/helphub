@@ -29,11 +29,11 @@ const config: Config = {
           DEFAULT: "var(--danger)",
           soft: "var(--danger-soft)",
         },
+        forest: "var(--forest)",
       },
       fontFamily: {
-        display: ["var(--font-sora)", "sans-serif"],
-        body: ["var(--font-inter)", "sans-serif"],
-        mono: ["var(--font-plex-mono)", "monospace"],
+        display: ["var(--font-fraunces)", "Palatino", "serif"],
+        body: ["var(--font-source-sans)", "Helvetica Neue", "sans-serif"],
       },
       keyframes: {
         pulseSoft: {

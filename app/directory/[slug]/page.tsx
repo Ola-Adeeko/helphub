@@ -19,7 +19,7 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const provider = providers.find((p) => p.slug === params.slug);
   return {
-    title: provider ? `${provider.name} — HelpHub Nigeria` : "Not found",
+    title: provider ? `${provider.name} - HelpHub Nigeria` : "Not found",
   };
 }
 
