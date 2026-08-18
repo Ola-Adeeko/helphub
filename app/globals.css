@@ -3,21 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --bg: #f6f9f8;
+  --bg: #f6f4ef;
   --surface: #ffffff;
-  --surface-2: #eaf3f1;
-  --border: #dce8e5;
-  --ink: #12221f;
-  --ink-muted: #57706a;
-  --ink-faint: #8aa29c;
-  --accent: #0e9384;
-  --accent-hover: #0b7d70;
-  --accent-ink: #ffffff;
-  --accent-soft: #d8f0eb;
-  --secondary: #ff8b66;
-  --secondary-soft: #ffe7db;
-  --danger: #c1584a;
-  --danger-soft: #f9e5e0;
+  --surface-2: #ece8df;
+  --border: #d8d2c6;
+  --ink: #161513;
+  --ink-muted: #5c5850;
+  --ink-faint: #8a8478;
+  --accent: #163a34;
+  --accent-hover: #0f2925;
+  --accent-ink: #f6f4ef;
+  --accent-soft: #dce6e2;
+  --secondary: #a34b2e;
+  --secondary-soft: #f3e4dc;
+  --danger: #9a3d32;
+  --danger-soft: #f6e4e0;
+  --forest: #10241f;
 }
 
 html {
@@ -27,12 +28,15 @@ html {
 body {
   background-color: var(--bg);
   color: var(--ink);
-  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 ::selection {
-  background: var(--accent-soft);
+  background: #c8d6d1;
   color: var(--ink);
+}
+
+.font-display {
+  font-variation-settings: "SOFT" 50, "WONK" 0.7;
 }
 
 .text-balance {
@@ -56,7 +60,6 @@ input:focus-visible,
 select:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
-  border-radius: 4px;
 }
 
 .scrollbar-thin::-webkit-scrollbar {
@@ -65,5 +68,4 @@ select:focus-visible {
 }
 .scrollbar-thin::-webkit-scrollbar-thumb {
   background: var(--border);
-  border-radius: 999px;
 }

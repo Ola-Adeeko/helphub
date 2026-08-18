@@ -8,10 +8,15 @@ export const providers: Provider[] = [
     city: "Lagos",
     photo:
       "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop",
-    tagline: "A quiet room for survivors of abuse to be heard first, helped second.",
+    tagline:
+      "A quiet room for survivors of abuse to be heard first, helped second.",
     about:
       "Room 707 runs confidential peer-support circles and one-on-one sessions for survivors of domestic and emotional abuse. Sessions are trauma-informed and led by a mix of licensed counsellors and trained peer supporters.",
-    specialties: ["Abuse & Domestic Violence", "Sexual Assault & Rape", "Grief & Loss"],
+    specialties: [
+      "Abuse & Domestic Violence",
+      "Sexual Assault & Rape",
+      "Grief & Loss",
+    ],
     licensed: true,
     certified: true,
     credentialNote: "Registered NGO · Counsellors licensed by CASSON",
@@ -32,7 +37,8 @@ export const providers: Provider[] = [
     city: "Abuja",
     photo:
       "https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=800&auto=format&fit=crop",
-    tagline: "Clinical psychologist focused on anxiety, depression, and burnout.",
+    tagline:
+      "Clinical psychologist focused on anxiety, depression, and burnout.",
     about:
       "Dr. Nwosu has twelve years of clinical experience helping working professionals manage anxiety, depression, and chronic stress. She uses CBT and ACT frameworks and offers both in-person and video sessions.",
     specialties: ["Depression & Anxiety", "Workplace & Stress"],
@@ -58,7 +64,11 @@ export const providers: Provider[] = [
     tagline: "24/7 crisis line and shelter referrals for survivors of assault.",
     about:
       "Safe Haven runs a round-the-clock crisis line for survivors of sexual assault and rape, with a network of partner clinics for medical and legal support. Their team includes trained crisis counsellors, not all of whom hold formal licenses, but all are supervised.",
-    specialties: ["Sexual Assault & Rape", "Suicide & Crisis Support", "Abuse & Domestic Violence"],
+    specialties: [
+      "Sexual Assault & Rape",
+      "Suicide & Crisis Support",
+      "Abuse & Domestic Violence",
+    ],
     licensed: false,
     certified: true,
     credentialNote: "Crisis-response certified · Volunteer-supervised model",
@@ -78,7 +88,8 @@ export const providers: Provider[] = [
     city: "Lagos",
     photo:
       "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop",
-    tagline: "Life & career coach helping men navigate stress, purpose, and pressure.",
+    tagline:
+      "Life & career coach helping men navigate stress, purpose, and pressure.",
     about:
       "Kunle is a certified life coach (not a licensed therapist) who works mostly with men navigating career pressure, purpose, and relationship stress. He's upfront that coaching complements, but doesn't replace, clinical therapy.",
     specialties: ["Workplace & Stress", "Family Therapy"],
@@ -108,7 +119,9 @@ export const providers: Provider[] = [
     priceFrom: 30000,
     freeFirstSession: false,
     languages: ["English"],
-    contacts: [{ type: "booking", value: "https://mindwellclinic.setmore.com" }],
+    contacts: [
+      { type: "booking", value: "https://mindwellclinic.setmore.com" },
+    ],
     verifiedByHelpHub: true,
   },
   {
@@ -120,7 +133,7 @@ export const providers: Provider[] = [
       "https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=800&auto=format&fit=crop",
     tagline: "Peer-led recovery groups for substance and alcohol addiction.",
     about:
-      "A community-run, 12-step-inspired recovery fellowship. Facilitators are people in long-term recovery themselves, not clinicians — New Dawn is best used alongside, not instead of, medical detox care.",
+      "A community-run, 12-step-inspired recovery fellowship. Facilitators are people in long-term recovery themselves, not clinicians, and New Dawn is best used alongside, not instead of, medical detox care.",
     specialties: ["Addiction & Substance Abuse", "Grief & Loss"],
     licensed: false,
     certified: false,
@@ -144,7 +157,8 @@ export const providers: Provider[] = [
     specialties: ["Depression & Anxiety", "Suicide & Crisis Support"],
     licensed: true,
     certified: true,
-    credentialNote: "MBBS, Fellow of the West African College of Physicians (Psychiatry)",
+    credentialNote:
+      "MBBS, Fellow of the West African College of Physicians (Psychiatry)",
     priceFrom: 40000,
     freeFirstSession: false,
     languages: ["English", "Igbo"],
@@ -163,8 +177,12 @@ export const providers: Provider[] = [
       "https://images.unsplash.com/photo-1529390079861-591de354faf5?q=80&w=800&auto=format&fit=crop",
     tagline: "Counselling built for teenagers, in language they actually use.",
     about:
-      "TeenSpace pairs adolescents with counsellors trained specifically in youth mental health — school pressure, identity, bullying, and family conflict. Parents can book, but sessions stay confidential to the teen.",
-    specialties: ["Teen & Adolescent Support", "Family Therapy", "Depression & Anxiety"],
+      "TeenSpace pairs adolescents with counsellors trained specifically in youth mental health, school pressure, identity, bullying, and family conflict. Parents can book, but sessions stay confidential to the teen.",
+    specialties: [
+      "Teen & Adolescent Support",
+      "Family Therapy",
+      "Depression & Anxiety",
+    ],
     licensed: true,
     certified: true,
     credentialNote: "Licensed Counsellors · Youth mental health certified",
@@ -186,11 +204,12 @@ export const providers: Provider[] = [
       "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop",
     tagline: "Family therapist working with multi-generational households.",
     about:
-      "Grace works with families navigating conflict between generations — often around finances, in-laws, and caregiving. She is certified in family systems therapy and is currently completing full clinical licensure.",
+      "Grace works with families navigating conflict between generations, often around finances, in-laws, and caregiving. She is certified in family systems therapy and is currently completing full clinical licensure.",
     specialties: ["Family Therapy", "Grief & Loss"],
     licensed: false,
     certified: true,
-    credentialNote: "Certified in Family Systems Therapy · Licensure in progress",
+    credentialNote:
+      "Certified in Family Systems Therapy · Licensure in progress",
     priceFrom: 12000,
     freeFirstSession: false,
     languages: ["English", "Igbo"],

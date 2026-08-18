@@ -13,17 +13,16 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#0e9384",
-          borderRadius: "50%",
-          color: "#ffffff",
+          background: "#163a34",
+          color: "#f6f4ef",
           fontSize: 18,
-          fontWeight: 700,
-          fontFamily: "system-ui, sans-serif",
+          fontWeight: 500,
+          fontFamily: "Georgia, serif",
         }}
       >
         H
       </div>
     ),
-    { ...size }
+    { ...size },
   );
 }

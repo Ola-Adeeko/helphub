@@ -3,54 +3,51 @@
 import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ArrowUpRight } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-bg/85 backdrop-blur-md">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center gap-2.5">
-          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-accent text-sm font-bold text-accent-ink">
-            H
+    <header className="sticky top-0 z-50 border-b border-line bg-surface">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <Link href="/" className="flex items-baseline gap-2">
+          <span className="font-display text-[1.45rem] leading-none tracking-tight text-ink">
+            HelpHub
           </span>
-          <span className="font-display text-lg font-semibold tracking-tight text-ink">
-            HelpHub <span className="text-ink-muted font-normal">Nigeria</span>
+          <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+            Nigeria
           </span>
         </Link>
 
-        <div className="hidden items-center gap-6 md:flex">
+        <div className="hidden items-center gap-8 md:flex">
           <Link
             href="/#story"
-            className="text-sm text-ink transition-colors hover:text-ink"
+            className="text-[15px] text-ink-muted transition-colors hover:text-ink"
           >
-            Our story
+            Why we exist
           </Link>
           <Link
             href="/#categories"
-            className="text-sm text-ink transition-colors hover:text-ink"
+            className="text-[15px] text-ink-muted transition-colors hover:text-ink"
           >
             Areas of support
           </Link>
           <Link
             href="/directory"
-            className="group inline-flex items-center gap-1.5 rounded-full bg-accent px-4 py-2 text-sm font-semibold text-accent-ink transition-transform hover:scale-[1.03] hover:bg-accent-hover"
+            className="bg-accent px-4 py-2 text-[15px] font-medium text-accent-ink transition-colors hover:bg-accent-hover"
           >
             Find help
-            <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
         </div>
 
-        <div className="flex items-center gap-3 md:hidden">
-          <button
-            onClick={() => setOpen(!open)}
-            className="text-ink"
-            aria-label="Toggle menu"
-          >
-            {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
-        </div>
+        <button
+          onClick={() => setOpen(!open)}
+          className="text-ink md:hidden"
+          aria-label="Toggle menu"
+        >
+          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </button>
       </nav>
 
       <AnimatePresence>
@@ -67,7 +64,7 @@ export default function Navbar() {
                 onClick={() => setOpen(false)}
                 className="text-ink-muted"
               >
-                Our story
+                Why we exist
               </Link>
               <Link
                 href="/#categories"
@@ -79,9 +76,9 @@ export default function Navbar() {
               <Link
                 href="/directory"
                 onClick={() => setOpen(false)}
-                className="inline-flex w-fit items-center gap-1.5 rounded-full bg-accent px-4 py-2 text-sm font-semibold text-accent-ink"
+                className="inline-flex w-fit bg-accent px-4 py-2 text-sm font-medium text-accent-ink"
               >
-                Find help <ArrowUpRight className="h-4 w-4" />
+                Find help
               </Link>
             </div>
           </motion.div>
